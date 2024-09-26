@@ -1,3 +1,4 @@
+import 'package:app_modelo/ui/selection.dart';
 import 'package:app_modelo/camera/camera_screen.dart';
 import 'package:app_modelo/global_b.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const CameraScreen(),
+      // home: const CameraScreen(),
+      home: Selection(),
       title: "detección de peligros",
       initialBinding: GlobalBindings(),
     );
