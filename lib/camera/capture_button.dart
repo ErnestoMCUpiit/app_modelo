@@ -8,15 +8,17 @@ const CaptureButton({ Key? key }) : super(key: key);
   @override
   Widget build(BuildContext context){
     return Positioned(
-      bottom: 30,
+      bottom: 0,
+      left: 0,
+      right: 0,
       child: GestureDetector(
         onTap: () => controller.capture(),
         child: Container(
           height: 80,
           width: 80,
           decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: Colors.black, width: 5),
+            color: Color.fromARGB(100, 255, 255, 255),
+            border: Border.all(color: const Color.fromARGB(255, 20, 44, 92), width: 5),
             shape: BoxShape.circle
           ),
           child: const Center(

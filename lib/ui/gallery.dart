@@ -1,3 +1,4 @@
+import 'package:app_modelo/camera/capture_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -17,10 +18,15 @@ class _GalleryState extends State<Gallery> {
           children: [
             Expanded(
               flex: 75,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 700,
-                color: Colors.green,
+              child: Stack(
+                children: [
+                  Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 700,
+                  color: Colors.green,
+                ),
+                CaptureButton()
+                ],
               ),
             ),
             Expanded(
