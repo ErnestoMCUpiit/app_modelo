@@ -12,7 +12,7 @@ class _SelectionState extends State<Selection> {
   Widget build(BuildContext context) {
     return Container(
       color: Color(0xFFF8F8FF),
-      child: Padding(padding: EdgeInsets.all(30),
+      child: Padding(padding: const EdgeInsets.all(30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
